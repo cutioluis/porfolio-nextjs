@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div>
-            <span>Made with 💙 by @cutioluis</span>
+            <span>Made with 💙 by <a href="">@cutioluis</a></span>
         </div>
     );
 };
