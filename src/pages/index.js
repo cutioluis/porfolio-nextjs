@@ -1,10 +1,14 @@
 import Layout from "../layout/Layout"
+import Header from "../components/Header/Header"
+import About from "../components/About/About"
+
 
 export default function Home() {
   return (
     <div>
       <Layout>
-        <h1>Main Page</h1>
+          <Header />
+          <About />
       </Layout>
     </div>
   )
