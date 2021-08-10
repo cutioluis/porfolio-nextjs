@@ -1,8 +1,9 @@
+import React from 'react';
 
 const Footer = () => {
     return (
         <div>
-            <span>Made with 💙 by <a href="">@cutioluis</a></span>
+            <h1>Footer</h1>
         </div>
     );
 };
