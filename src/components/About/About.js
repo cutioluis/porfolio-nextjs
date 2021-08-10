@@ -1,8 +1,8 @@
 const About = () => {
     return (
-        <div>
+        <section>
             About me
-        </div>
+        </section>
     );
 };
 
