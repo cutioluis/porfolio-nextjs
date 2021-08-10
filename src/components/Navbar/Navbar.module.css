@@ -1,0 +1,24 @@
+.navbar {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navbar ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    margin: 0 20px;
+    color: var( --luis-color-blue);
+    font-weight: normal;
+}
+
