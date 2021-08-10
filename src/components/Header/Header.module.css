@@ -1,0 +1,27 @@
+.header {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.headerWords {
+    margin: 10px 0;
+}
+
+.header__title {
+    line-height: 70px;
+    font-size: 70px;
+    background: var( --luis-title-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var( --luis-color-pink);
+}
+
+.headerSocials {
+    margin-top: 35px;
+}
+
+.headerSocials a {
+    margin: 0 15px;
+}

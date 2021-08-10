@@ -1,0 +1,70 @@
+:root {
+  --luis-color-blue: #aaadfa;
+  --luis-color-pink: #ee9ed2;
+  /* Gradinets */
+  --luis-title-gradient: linear-gradient(
+    90.21deg,
+    #ba7ed0 0.2%,
+    #ee9ed2 32.74%,
+    #aaadfa 63.36%,
+    #fbcea5 80.84%
+  );
+  --luis-title-gradient2: linear-gradient(
+    88.37deg,
+    #ee9ed2 1.07%,
+    #fbcea5 98.38%
+  );
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--luis-color-blue);
+  font-family: "Poopins";
+  background: radial-gradient(
+    100% 400% at 0% 100%,
+    #011337 0%,
+    #01091a 49.32%,
+    #00050d 100%
+  );
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: var(--luis-color-pink);
+  font-weight: 600;
+}
+
+a::before,
+a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+a::after {
+  background: var(--luis-color-pink);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+p, a {
+  font-size: 20px;
+}

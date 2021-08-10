@@ -1,4 +1,3 @@
-import "Navbar.module.css"
 const About = () => {
     return (
         <div>
