@@ -10,6 +10,7 @@ const About = () => {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
           eros, turpis morbi mi praesent. Consectetur adipiscing elit. Scelerisque
+          
         </p>
         <a className={styles.about__meet} href="">Conocer màs</a>
       </div>
