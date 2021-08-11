@@ -1,6 +1,7 @@
 import styles from "./About.module.css";
+import Link from "next/link";
 import Image from "next/image";
-import profilePic from '../../../public/img/luis-profile.png';
+import profilePic from "../../../public/img/luis-profile.png";
 
 const About = () => {
   return (
@@ -8,21 +9,26 @@ const About = () => {
       <div className={styles.aboutLeft}>
         <h2>About me</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-          eros, turpis morbi mi praesent. Consectetur adipiscing elit. Scelerisque
-          
+          Hello! My name is Luis and I enjoy creating things that live on the
+          internet. My interest in web development started back in 2018 when I
+          decided to try editing custom Tumblr themes — turns out hacking
+          together a custom reblog button taught me a lot about HTML & CSS!
         </p>
-        <a className={styles.about__meet} href="">Conocer màs</a>
+        <br />
+        <Link href="/about">
+          <a className={styles.about__meet} href="">
+            Conocer màs
+          </a>
+        </Link>
       </div>
       <div>
         <Image
-        className={styles.about__img}
+          className={styles.about__img}
           src={profilePic}
           alt="Picture of the author"
           width={300}
           height={310}
-          responsive="true"
-          />
+        />
       </div>
     </section>
   );

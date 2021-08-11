@@ -1,5 +1,5 @@
 import styles from "./ProjectsCard.module.css";
-import Image from "next/image";
+import Image  from "next/image";
 
 import { projects } from "../../constants/constants";
 
@@ -16,7 +16,6 @@ const ProjectsCard = () => {
                 alt="Project"
                 width={300}
                 height={200}
-                responsive="true"
               />
             </div>
             <div className={styles.projects_card__description}>
