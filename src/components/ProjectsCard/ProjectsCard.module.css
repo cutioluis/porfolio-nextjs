@@ -1,5 +1,4 @@
 .ProjectsCard {
-    margin: 0 auto;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +8,7 @@
 
 .projects_card {
     padding: 30px;
+    margin: 20px  0;
     height: auto;
     width: auto;
     background: #010F2A;

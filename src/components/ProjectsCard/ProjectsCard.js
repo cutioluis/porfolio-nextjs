@@ -1,35 +1,35 @@
 import styles from "./ProjectsCard.module.css";
 import Image from "next/image";
-import homePic from '../../assets/img/luis-home.png'
+
+import { projects } from "../../constants/constants";
 
 const ProjectsCard = () => {
   return (
     <section className={styles.ProjectsCard}>
-      <article className={styles.projects_card}>
-        <div className={styles.projects_card__container}>
-          <div className={styles.projects_card__cube}>
-            <Image
-              className={styles.about__cube}
-              src={homePic}
-              alt="Project"
-              width={300}
-              height={200}
-              responsive
-            />
-          </div>
-          <div className={styles.projects_card__description}>
-            <h3>Porfolio web </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Scelerisque eros, turpis
-            </p>
-            <div className={styles.projects_card_code}>
-              <a href="">Demo</a>
-              <a href="">Code</a>
+      {projects.map((project) => (
+        <article key={project.id} className={styles.projects_card}>
+          <div className={styles.projects_card__container}>
+            <div className={styles.projects_card__cube}>
+              <Image
+                className={styles.about__cube}
+                src={project.image}
+                alt="Project"
+                width={300}
+                height={200}
+                responsive="true"
+              />
+            </div>
+            <div className={styles.projects_card__description}>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className={styles.projects_card_code}>
+                <a href={project.visit}>Demo</a>
+                <a href={project.source}>Code</a>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      ))}
     </section>
   );
 };

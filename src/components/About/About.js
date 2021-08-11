@@ -1,6 +1,6 @@
 import styles from "./About.module.css";
 import Image from "next/image";
-import profilePic from '../../assets/img/luis-profile.png';
+import profilePic from '../../../public/img/luis-profile.png';
 
 const About = () => {
   return (
@@ -21,8 +21,8 @@ const About = () => {
           alt="Picture of the author"
           width={300}
           height={310}
-          responsive
-        />
+          responsive="true"
+          />
       </div>
     </section>
   );
