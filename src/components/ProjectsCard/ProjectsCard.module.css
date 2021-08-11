@@ -28,6 +28,10 @@
     height: auto;
 }
 
+.about__cube {
+    border-radius: 20px;
+}
+
 .projects_card__description {
     margin: 15px;
     max-width: 400px;
