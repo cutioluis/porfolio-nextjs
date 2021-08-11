@@ -1,0 +1,8 @@
+.ProjectsTitle {
+    padding: 30px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
