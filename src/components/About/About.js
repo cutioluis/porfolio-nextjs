@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import Link from "next/link";
+import Skills from '../Skills/Skills'
 import Image from "next/image";
 import profilePic from "../../../public/img/luis-profile.png";
 
@@ -15,11 +15,7 @@ const About = () => {
           together a custom reblog button taught me a lot about HTML & CSS!
         </p>
         <br />
-        <Link href="/about">
-          <a className={styles.about__meet} href="">
-            Conocer màs
-          </a>
-        </Link>
+        <Skills />
       </div>
       <div>
         <Image
