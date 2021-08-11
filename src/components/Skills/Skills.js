@@ -7,9 +7,13 @@ const Skills = () => {
         <p className={styles.skills__title}>Tecnologias</p>
 
         <div className={styles.skills__left}>
-          <p>▶ Web development</p>
-          <p>▶ Mobile development</p>
-          <p>▶ Ui/Ux Designer</p>
+          <p>▶ React.js</p>
+          <p>▶ JavaScript</p>
+          <p>▶ Figma </p>
+        </div>
+
+        <div className={styles.skills__left}>
+          <p>▶ Next.js</p>
         </div>
       </div>
     </div>
