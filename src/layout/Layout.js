@@ -10,7 +10,7 @@ const Layout = (props) => {
     <>
       <Navbar>
         <NavbarItems title="Blog" />
-        <NavbarItems title="Links">
+        <NavbarItems title="Links ▶ ">
             <DropDown />
         </NavbarItems>
       </Navbar>
