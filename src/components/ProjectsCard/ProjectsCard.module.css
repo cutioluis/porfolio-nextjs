@@ -1,29 +1,39 @@
 .ProjectsCard {
   display: flex;
+  margin: 0 auto;
+  max-width: 60%;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+
+.projects_card:hover{
+  cursor: pointer;
+  box-shadow: 0px 9px 43px 7px rgba(0, 0, 0, 0.3);
+  transform: translateY(-9px);
+}
+
 .projects_card {
+  transition: transform 150ms;
   padding: 20px;
   margin: 20px 20px;
   height: auto;
   width: auto;
   background: #010f2a;
-  box-shadow: 0px 9px 43px 7px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.projects_card__title:hover {
+  cursor: pointer;
+  transition: 150ms;
+  color: var(--luis-color-pink);
 }
 
 .projects_card__container {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-}
-
-.projects_card__cube {
-  margin: 15px;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
 }
 
 .about__cube {
@@ -32,7 +42,7 @@
 
 .projects_card__description {
   margin: 15px;
-  max-width: 480px;
+  max-width: 70%;
 }
 
 .projects_card_code {

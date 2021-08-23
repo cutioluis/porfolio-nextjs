@@ -14,12 +14,12 @@ const ProjectsCard = () => {
                 className={styles.about__cube}
                 src={project.image}
                 alt="Project"
-                width={300}
-                height={200}
+                width={250}
+                height={150}
               />
             </div>
             <div className={styles.projects_card__description}>
-              <h3>{project.title}</h3>
+              <h3 className={styles.projects_card__title}>{project.title}</h3>
               <p>{project.description}</p>
               <div className={styles.projects_card_code}>
                 <a href={project.visit}>Demo</a>

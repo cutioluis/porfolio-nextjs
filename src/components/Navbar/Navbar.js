@@ -1,17 +1,12 @@
-import styles from './Navbar.module.css';
-import { RiSunFill } from "react-icons/ri";
-const Navbar = () => {
+import styles from "./Navbar.module.css";
+
+const Navbar = (props) => {
   return (
-    <div className={styles.navbar}>
-      <ul>
-        <li><a href="">Luis</a></li>
+    <nav className={styles.navbar}>
+      <ul className={styles.navbar_nav}>
+        {props.children}
       </ul>
-      <ul>
-        <li><a href="">About me</a></li>
-        <li><a href="">Proyectos</a></li>
-        <RiSunFill  />
-      </ul>
-    </div>
+    </nav>
   );
 };
 

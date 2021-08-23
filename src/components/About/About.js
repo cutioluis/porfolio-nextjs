@@ -12,7 +12,6 @@ const About = () => {
           Hello! My name is Luis and I enjoy creating things that live on the
           internet. My interest in web development started back in 2018 when I
           decided to try editing custom Tumblr themes — turns out hacking
-          together a custom reblog button taught me a lot about HTML & CSS!
         </p>
         <br />
         <Skills />
@@ -22,8 +21,8 @@ const About = () => {
           className={styles.about__img}
           src={profilePic}
           alt="Picture of the author"
-          width={300}
-          height={310}
+          width={250}
+          height={250}
         />
       </div>
     </section>

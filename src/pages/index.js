@@ -6,10 +6,11 @@ import ProjectsCard from "../components/ProjectsCard/ProjectsCard";
 
 
 
+
 export default function Home() {
   return (
     <div>
-      <Layout>
+      <Layout>            
         <Header />
         <About />
         <ProjectsCard></ProjectsCard>

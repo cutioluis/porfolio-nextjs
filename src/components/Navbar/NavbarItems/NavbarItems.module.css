@@ -1,0 +1,17 @@
+.navbar_li {
+    padding: 15px;
+    list-style: none;
+}
+
+.navbar_li span {
+    padding: 15px 20px;
+    margin:  10px;
+    color: var(--luis-color-blue);
+    font-weight: normal;
+}
+
+.navbar_li:hover {
+    transition: 250ms;
+    background: rgba(96, 144, 245, 0.1);
+    border-radius: 10px;
+}
