@@ -1,0 +1,25 @@
+.dropDown {
+  position: absolute;
+  top: 108px;
+  height: auto;
+  width: 200px;
+  transform: translateX(-50%);
+  background: rgba(96, 144, 245, 0.1);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.DropDown_item {
+    color: var(--luis-color-blue);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  transition: 150ms;
+}
+
+.DropDown_item:hover {
+    border-radius: 10px;
+    transition: 150ms;
+    background: rgba(96, 144, 245, 0.3);
+}
