@@ -1,0 +1,17 @@
+.article__search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.article__input {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  width: 320px;
+  padding: 20px;
+  color: var(--luis-color-blue);
+  background: #6090f51a;
+}

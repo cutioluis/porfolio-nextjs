@@ -1,6 +1,7 @@
 :root {
   --luis-color-blue: #aaadfa;
   --luis-color-pink: #b783df;
+  --luis-color-blue-black: #010F2A;
   /* Gradinets */
   --luis-title-gradient: linear-gradient(90deg, #b584df 3.07%, #5c90f6 95.93%);
   --luis-title-gradient2: linear-gradient(
@@ -31,6 +32,16 @@ body {
   );
 }
 
+h1 {
+  line-height: 60px;
+  padding: 10px;
+  font-size: 60px;
+  background: var(--luis-title-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--luis-color-pink);
+}
+
 a {
   text-decoration: none;
 }
@@ -45,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 23px;
   line-height: 30px;
   margin-bottom: 10px;
   font-weight: 600;
@@ -56,3 +67,7 @@ a {
   font-size: 18px;
 }
 
+
+input:focus-visible {
+  outline: none;
+}
