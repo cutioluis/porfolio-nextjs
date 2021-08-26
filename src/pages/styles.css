@@ -70,11 +70,20 @@ input:focus-visible {
   outline: none;
 }
 
-.light-mode {
-  body: radial-gradient(
+.light-mode  {
+  background-color: radial-gradient(
     100% 400% at 0% 100%,
     #e1e1e1 0%,
     #f3f3f3 49.32%,
     #ffffff 100%
+  );
+}
+
+.dark-mode {
+  background-color: radial-gradient(
+    100% 400% at 0% 100%,
+    #011337 0%,
+    #01091a 49.32%,
+    #00050d 100%
   );
 }

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import NavbarItems from "../components/Navbar/NavbarItems/NavbarItems";
-import DropDown from '../components/Navbar/DropDown/DropDown'
-
+import DropDown from "../components/Navbar/DropDown/DropDown";
 
 const Layout = (props) => {
   return (
@@ -11,7 +10,7 @@ const Layout = (props) => {
       <Navbar>
         <NavbarItems title="Blog" />
         <NavbarItems title="Links ▶ ">
-            <DropDown />
+          <DropDown />
         </NavbarItems>
       </Navbar>
       {props.children}
@@ -21,3 +20,6 @@ const Layout = (props) => {
 };
 
 export default Layout;
+
+/* 
+<BiMoon/> */
