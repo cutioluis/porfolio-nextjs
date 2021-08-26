@@ -1,7 +1,5 @@
 import styles from "./About.module.css";
 import Skills from '../Skills/Skills'
-import Image from "next/image";
-import profilePic from "../../../public/img/luis-profile.png";
 
 const About = () => {
   return (
@@ -17,13 +15,6 @@ const About = () => {
         <Skills />
       </div>
       <div>
-        <Image
-          className={styles.about__img}
-          src={profilePic}
-          alt="Picture of the author"
-          width={250}
-          height={250}
-        />
       </div>
     </section>
   );

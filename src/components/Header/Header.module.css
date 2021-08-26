@@ -3,20 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   margin: 10% auto;
   max-width: 700px;
   text-align: center;
 }
-
-.headerWords {
-  margin: 10px 0;
-}
-
-.header__paragraph {
-  font-size: 20px;
-}
-
 
 .headerSocials {
   margin-top: 35px;

@@ -1,15 +1,14 @@
 :root {
   --luis-color-blue: #aaadfa;
   --luis-color-pink: #b783df;
-  --luis-color-blue-black: #010F2A;
+  --luis-color-blue-black: #010f2a;
   /* Gradinets */
   --luis-title-gradient: linear-gradient(90deg, #b584df 3.07%, #5c90f6 95.93%);
   --luis-title-gradient2: linear-gradient(
     90deg,
     #b584df 0%,
     #b584df 44.87%,
-    #b584df 97.13%
-    /* Margins */
+    #b584df 97.13% /* Margins */
   );
   --luis-margin: 150px;
 }
@@ -67,7 +66,15 @@ a {
   font-size: 18px;
 }
 
-
 input:focus-visible {
   outline: none;
+}
+
+.light-mode {
+  body: radial-gradient(
+    100% 400% at 0% 100%,
+    #e1e1e1 0%,
+    #f3f3f3 49.32%,
+    #ffffff 100%
+  );
 }

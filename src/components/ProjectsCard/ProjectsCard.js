@@ -1,6 +1,4 @@
 import styles from "./ProjectsCard.module.css";
-import Image  from "next/image";
-
 import { projects } from "../../constants/constants";
 
 const ProjectsCard = () => {
@@ -10,13 +8,6 @@ const ProjectsCard = () => {
         <article key={project.id} className={styles.projects_card}>
           <div className={styles.projects_card__container}>
             <div className={styles.projects_card__cube}>
-              <Image
-                className={styles.about__cube}
-                src={project.image}
-                alt="Project"
-                width={250}
-                height={150}
-              />
             </div>
             <div className={styles.projects_card__description}>
               <h3 className={styles.projects_card__title}>{project.title}</h3>
