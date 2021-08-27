@@ -10,7 +10,7 @@
 }
 
 .DropDown_item {
-    color: var(--luis-color-blue);
+  color: var(--luis-color-blue);
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,8 @@
 }
 
 .DropDown_item:hover {
-    border-radius: 10px;
-    transition: 150ms;
-    background: rgba(96, 144, 245, 0.3);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 150ms;
+  background: rgba(96, 144, 245, 0.3);
 }

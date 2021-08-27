@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "../layout/Layout";
 import About from "../components/About/About";
 import Header from "../components/Header/Header";

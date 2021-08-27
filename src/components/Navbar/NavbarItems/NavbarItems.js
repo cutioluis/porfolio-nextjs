@@ -6,12 +6,13 @@ const NavbarItems = (props) => {
 
   return (
     <li className={styles.navbar_li}>
-      <span onClick={() => setOpen(!open)} href="">
+      <span className={styles.navbar_navigation} onClick={() => setOpen(!open)} href="">
         {props.title}
       </span>
       {open && props.children}
     </li>
   );
 };
+
 
 export default NavbarItems;

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import NavbarItems from "../components/Navbar/NavbarItems/NavbarItems";
@@ -21,5 +20,3 @@ const Layout = (props) => {
 
 export default Layout;
 
-/* 
-<BiMoon/> */
