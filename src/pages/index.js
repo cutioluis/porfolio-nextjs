@@ -5,10 +5,8 @@ import Header from "../components/Header/Header";
 import ProjectsCard from "../components/ProjectsCard/ProjectsCard";
 
 export default function Home() {
-  const [ligth, setligth] = useState(true);
-
   return (
-    <div className={ligth ? "light-mode" : "dark-mode"}>
+    <div>
       <Layout>
         <Header />
         <About />
