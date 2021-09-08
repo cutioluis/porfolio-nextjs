@@ -1,26 +1,71 @@
-import styles from "./ProjectsCard.module.css";
+import styled from "styled-components";
+
 import { projects } from "../../constants/constants";
+import { COLORS, SIZES } from "../../constants/";
+
+const Container = styled.div`
+  margin: ${SIZES.margin};
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+const SubContainer = styled.div`
+  width: ${SIZES.marginWidth}px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const CardProject = styled.article`
+  transition: transform 150ms;
+  padding: 20px;
+  margin: 20px 0;
+  background: #010f2a;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition: 150ms;
+  }
+`;
+
+const ProjectDetails = styled.div`
+  padding: 15px;
+  max-width: 50%;
+`;
+
+const DetailsToo = styled.div`
+  margin: 20px 0;
+
+  a {
+    font-weight: 600;
+    color: ${COLORS.linkColor};
+    margin-right: 25px;
+  }
+`;
 
 const ProjectsCard = () => {
   return (
-    <section className={styles.ProjectsCard}>
-      {projects.map((project) => (
-        <article key={project.id} className={styles.projects_card}>
-          <div className={styles.projects_card__container}>
-            <div className={styles.projects_card__cube}>
-            </div>
-            <div className={styles.projects_card__description}>
-              <h3 className={styles.projects_card__title}>{project.title}</h3>
+    <Container>
+      <SubContainer>
+        {projects.map((project) => (
+          <CardProject key={project.id}>
+            <ProjectDetails>
+              <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <div className={styles.projects_card_code}>
-                <a href={project.visit}>Demo</a>
-                <a href={project.source}>Code</a>
-              </div>
-            </div>
-          </div>
-        </article>
-      ))}
-    </section>
+              <DetailsToo>
+                <a>Demo</a>
+                <a>Code</a>
+              </DetailsToo>
+            </ProjectDetails>
+          </CardProject>
+        ))}
+      </SubContainer>
+    </Container>
   );
 };
 
