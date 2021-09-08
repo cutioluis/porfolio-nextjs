@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { COLORS } from "../../constants/";
+import { COLORS, SIZES } from "../../constants/";
 
 const ContainerHeader = styled.section`
   text-align: center;
-  padding: 10px;
+  margin: ${SIZES.marginHero};
 `;
 const Greeting = styled.h1``;
 
@@ -23,7 +23,7 @@ const SocialItem = styled.a`
   cursor: pointer;
   color: ${COLORS.linkColor};
   font-weight: 500;
-  margin: 0 20px;
+  margin: 0 10px;
 `;
 
 const Header = () => {
