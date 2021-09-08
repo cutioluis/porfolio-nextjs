@@ -1,10 +1,23 @@
-import styles from "./Footer.module.css";
+import styled from "styled-components";
+import { COLORS } from "../../constants/";
+
+const SectionFooter = styled.footer`
+  text-align: center;
+  margin: 30px 0;
+`;
+
+const FooterItem = styled.span`
+  color: ${COLORS.linkColor};
+`;
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <p>Designed & Built by <span className={styles.footer_ancor}>Luis Cutiopala</span></p>
-    </footer>
+    <SectionFooter>
+      <p>
+        Designed & Built by{" "}
+        <FooterItem>Luis Cutiopala</FooterItem>
+      </p>
+    </SectionFooter>
   );
 };
 

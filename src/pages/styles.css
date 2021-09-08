@@ -3,14 +3,13 @@
   --luis-color-pink: #b783df;
   --luis-color-blue-black: #010f2a;
   /* Gradinets */
-  --luis-title-gradient: linear-gradient(90deg, #b584df 3.07%, #5c90f6 95.93%);
+  --luis-title-gradient: linear-gradient(59.97deg, #B384E0 10.17%, #4E92F9 88.89%);
   --luis-title-gradient2: linear-gradient(
     90deg,
     #b584df 0%,
     #b584df 44.87%,
     #b584df 97.13% /* Margins */
   );
-  --luis-margin: 150px;
 }
 
 * {

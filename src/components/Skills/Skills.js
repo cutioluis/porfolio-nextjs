@@ -1,18 +1,23 @@
-import styles from "./Skills.module.css";
+import styled from "styled-components";
+import { COLORS } from "../../constants/";
+
+const SectionSkills = styled.section`
+  margin: 10px 0;
+
+  p {
+    color: ${COLORS.linkColor};
+    margin: 10px 0;
+  }
+`;
 
 const Skills = () => {
   return (
-    <div className={styles.skills}>
-      <div>
-        <p className={styles.skills__title}>Tecnologias</p>
-      </div>
-      <ul>
-        <li>Web development</li>
-        <li>Mobile development</li>
-        <li>DEVOPS</li>
-        <li>Backed development</li>
-      </ul>
-    </div>
+    <SectionSkills>
+      <p>Tecnologias</p>
+      <li>Web development</li>
+      <li>Mobile development</li>
+      <li>DEVOPS</li>
+    </SectionSkills>
   );
 };
 

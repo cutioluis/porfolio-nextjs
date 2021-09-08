@@ -22,7 +22,7 @@ const CardProject = styled.article`
   transition: transform 150ms;
   padding: 20px;
   margin: 20px 0;
-  background: #010f2a;
+  background: ${COLORS.background};
   border-radius: 10px;
 
   &:hover {
@@ -68,5 +68,7 @@ const ProjectsCard = () => {
     </Container>
   );
 };
+
+
 
 export default ProjectsCard;

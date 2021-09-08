@@ -14,7 +14,7 @@ const COLORS = {
   fontColor: "#F8F8F8",
   headingColor: "#e7b996",
   darkFontColor: "#E8E9E4",
-  background: "#1f2022",
+  background: "#010f2a",
   background2: "#222323",
   mediumFontColor: "#dee2e6",
   lightFontColor: "#868e96",
@@ -41,6 +41,11 @@ const LINKS = {
   contact: {
     url: "/open",
     title: "Open",
+  },
+
+  dev: {
+    url: "/history",
+    title: "History",
   },
 };
 

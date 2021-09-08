@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {COLORS, SIZES } from "../../constants/";
 
 const Container = styled.div`
+height: 80vh;
   display: flex;
   margin: ${SIZES.margin};
   justify-content: center;
@@ -25,7 +26,7 @@ const SectionAvatar = styled.div`
 `;
 
 const SectionInfo = styled.div `
-    max-width: 70%;
+    max-width: 60%;
 `
 
 const About = () => {
