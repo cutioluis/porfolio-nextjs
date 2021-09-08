@@ -22,7 +22,7 @@ const FONTS = {
     lightBackgroundHover: '#3b3b3e',
     codeBackgroundColor: '#2e2e30',
     border: '#404040',
-    linkColor: '#6ab0f3',
+    linkColor: '#B783DF',
     linkColorDarker: '#4a72a5',
     linkHoverColor: '#e1a6f2',
     navbarColor: '#1d1d1d',
