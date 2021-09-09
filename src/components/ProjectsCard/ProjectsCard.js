@@ -3,11 +3,20 @@ import styled from "styled-components";
 import { projects } from "../../constants/constants";
 import { COLORS, SIZES } from "../../constants/";
 
+const ContainerMain = styled.div`
+  width: ${SIZES.marginWidth}px;
+  margin: 0 auto;
+`;
+
+const TitleProjects = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
+
 const Container = styled.div`
-  margin: ${SIZES.margin};
   display: flex;
   justify-content: center;
-  width: 100%;
 `;
 
 const SubContainer = styled.div`
@@ -50,25 +59,29 @@ const DetailsToo = styled.div`
 
 const ProjectsCard = () => {
   return (
-    <Container>
-      <SubContainer>
-        {projects.map((project) => (
-          <CardProject key={project.id}>
-            <ProjectDetails>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <DetailsToo>
-                <a>Demo</a>
-                <a>Code</a>
-              </DetailsToo>
-            </ProjectDetails>
-          </CardProject>
-        ))}
-      </SubContainer>
-    </Container>
+    <ContainerMain>
+      <TitleProjects>
+        <h2>Projects</h2>
+        <span>See all projectss</span>
+      </TitleProjects>
+      <Container>
+        <SubContainer>
+          {projects.map((project) => (
+            <CardProject key={project.id}>
+              <ProjectDetails>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <DetailsToo>
+                  <a>Demo</a>
+                  <a>Code</a>
+                </DetailsToo>
+              </ProjectDetails>
+            </CardProject>
+          ))}
+        </SubContainer>
+      </Container>
+    </ContainerMain>
   );
 };
-
-
 
 export default ProjectsCard;
