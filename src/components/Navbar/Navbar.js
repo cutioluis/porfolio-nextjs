@@ -48,7 +48,7 @@ const LinkContainer = styled.div`
 const Navbar = () => {
   return (
     <Container>
-      <Link href="/">
+      <Link passHref href="/">
         <LogoContainer>
           <a>dev</a>
         </LogoContainer>
@@ -57,8 +57,10 @@ const Navbar = () => {
         {React.Children.toArray(
           Object.values(LINKS).map((link) => {
             return (
-              <LinkContainer>
-                <Link href={link.url}>{link.title}</Link>
+              <LinkContainer key={link.title}>
+                <Link passHref href={link.url}>
+                  {link.title}
+                </Link>
               </LinkContainer>
             );
           })
