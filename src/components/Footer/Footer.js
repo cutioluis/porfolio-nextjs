@@ -10,13 +10,16 @@ const FooterItem = styled.span`
   color: ${COLORS.linkColor};
 `;
 
+const FooterTitle = styled.p `
+  font-size: 16px;
+`
+
 const Footer = () => {
   return (
     <SectionFooter>
-      <p>
-        Designed & Built by{" "}
-        <FooterItem>Luis Cutiopala</FooterItem>
-      </p>
+      <FooterTitle>
+        Designed & Built by <FooterItem>Luis Cutiopala</FooterItem>
+      </FooterTitle>
     </SectionFooter>
   );
 };

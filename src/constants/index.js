@@ -1,4 +1,7 @@
 const FONTS = {
+
+  email: 'cutioluis@gmail.com',
+
   Poopins: {
     bold: "Popins Bold",
     extraBold: "Plus Jakarta Sans ExtraBold",
@@ -51,8 +54,27 @@ const LINKS = {
 
 const SIZES = {
   marginHero: " 100px 0",
+  marginSection: "100px 0",
   marginWidth: "900",
   margin: "50px 0",
 };
+
+
+const NETWORKS = [
+  {
+      name: 'Twitter',
+      url: 'http://twitter.com/cutioluis'
+  },
+  {
+      name: 'Linkedin',
+      url: 'http://linkedin.com/cutioluis'
+  },
+  {
+      name: 'Github',
+      url: 'http://github.com/cutioluis'
+  },
+]
+
+export default NETWORKS
 
 export { FONTS, COLORS, LINKS, SIZES };

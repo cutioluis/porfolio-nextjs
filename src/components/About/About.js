@@ -1,10 +1,10 @@
 import Skills from "../Skills/Skills";
 import styled from "styled-components";
 
-import {COLORS, SIZES } from "../../constants/";
+import { COLORS, SIZES } from "../../constants/";
 
 const Container = styled.div`
-height: 80vh;
+  height: 80vh;
   display: flex;
   margin: ${SIZES.margin};
   justify-content: center;
@@ -25,9 +25,9 @@ const SectionAvatar = styled.div`
   background-color: ${COLORS.lightBackground};
 `;
 
-const SectionInfo = styled.div `
-    max-width: 60%;
-`
+const SectionInfo = styled.div`
+  max-width: 60%;
+`;
 
 const About = () => {
   return (
@@ -36,9 +36,10 @@ const About = () => {
         <SectionInfo>
           <h2>About me</h2>
           <p>
-            Hello! My name is Luis and I enjoy creating things that live on the
-            internet. My interest in web development started back in 2018 when I
-            decided to try editing custom Tumblr themes — turns out hacking
+            <b> Hello! My name is Luis</b> and I enjoy creating things that live
+            on the internet. My interest in web development started back in{" "}
+            <b>2017</b> when I decided to try editing page web of Facebook and
+            Google Search, using the famous: Inspect elements
           </p>
           <br />
           <Skills />
