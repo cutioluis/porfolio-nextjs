@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import Head from "next/head";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
@@ -33,10 +33,7 @@ export default class MyDocument extends Document {
       <Html lang="en-GB">
         <Head>
           <title>Luis Cutiopala</title>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-            rel="stylesheet"
-          />
+          <meta property="og:title" content="cutioluis" key="title" />
         </Head>
         <body>
           <Main />
