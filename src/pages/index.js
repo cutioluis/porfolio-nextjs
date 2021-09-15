@@ -6,9 +6,9 @@ import ProjectsCard from "../components/ProjectsCard/ProjectsCard";
 export default function Home() {
   return (
     <>
-        <Header />
-        <About />
-        <ProjectsCard></ProjectsCard>
+      <Header />
+      <About />
+      <ProjectsCard />
     </>
   );
 }
