@@ -41,21 +41,7 @@ const COLORS = {
   gradientText: `linear-gradient(59.97deg, #B384E0 10.17%, #4E92F9 88.89%)`,
 };
 
-const LINKS = {
-  blog: {
-    url: "/blog",
-    title: "Blog",
-  },
-  contact: {
-    url: "/open",
-    title: "Open",
-  },
 
-  dev: {
-    url: "/history",
-    title: "History",
-  },
-};
 
 const SIZES = {
   marginHero: " 100px 0",
@@ -64,21 +50,4 @@ const SIZES = {
   margin: "50px 0",
 };
 
-const NETWORKS = [
-  {
-    name: "Twitter",
-    url: "http://twitter.com/cutioluis",
-  },
-  {
-    name: "Linkedin",
-    url: "http://linkedin.com/cutioluis",
-  },
-  {
-    name: "Github",
-    url: "http://github.com/cutioluis",
-  },
-];
-
-export default NETWORKS;
-
-export { FONTS, COLORS, LINKS, SIZES };
+export { FONTS, COLORS, SIZES };

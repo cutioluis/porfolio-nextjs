@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { siteMetadata } from "../../data/siteMetadata";
 import { COLORS, SIZES } from "../../constants/";
 
 const ContainerHeader = styled.section`
@@ -29,11 +30,8 @@ const SocialItem = styled.a`
 const Header = () => {
   return (
     <ContainerHeader>
-      <Greeting>Hey, I’m Luis</Greeting>
-      <Description>
-        a <b>Frontend Developer</b> and <b> Ui/Ux Designer</b> I specialize in
-        Web and Mobile Development
-      </Description>
+      <Greeting>{siteMetadata.title}</Greeting>
+      <Description>{siteMetadata.description}</Description>
       <ContainerSocials>
         <SocialItem>Linkedin</SocialItem>
         <SocialItem>Github</SocialItem>

@@ -5,7 +5,7 @@ import { COLORS, SIZES } from "../../constants/";
 
 const ContainerMain = styled.div`
   width: ${SIZES.marginWidth}px;
-  margin: 0 auto;
+  margin:  0 auto;
 `;
 
 const TitleProjects = styled.div`

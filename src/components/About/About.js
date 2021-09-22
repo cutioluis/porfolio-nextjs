@@ -2,10 +2,11 @@ import Skills from "../Skills/Skills";
 import styled from "styled-components";
 
 import { COLORS, SIZES } from "../../constants/";
+import { siteMetadata } from "src/data/siteMetadata";
 
 const Container = styled.div`
-  height: 80vh;
   display: flex;
+  min-height: 100vh;
   margin: ${SIZES.margin};
   justify-content: center;
   width: 100%;
@@ -34,13 +35,8 @@ const About = () => {
     <Container>
       <AboutSection>
         <SectionInfo>
-          <h2>About me</h2>
-          <p>
-            <b> Hello! My name is Luis</b> and I enjoy creating things that live
-            on the internet. My interest in web development started back in{" "}
-            <b>2017</b> when I decided to try editing page web of Facebook and
-            Google Search, using the famous: Inspect elements
-          </p>
+          <h2>{siteMetadata.aboutMe.title}</h2>
+          <p>{siteMetadata.aboutMe.description}</p>
           <br />
           <Skills />
         </SectionInfo>

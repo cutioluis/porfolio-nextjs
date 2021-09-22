@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
-import { COLORS, FONTS, LINKS } from "../../constants/";
+import { headerNavLinks } from "../../data/headerNavLinks";
+import { COLORS } from "../../constants/";
 
 const Container = styled.div`
   width: 100%;
@@ -54,17 +55,15 @@ const Navbar = () => {
         </LogoContainer>
       </Link>
       <NavBar>
-        {React.Children.toArray(
-          Object.values(LINKS).map((link) => {
-            return (
-              <LinkContainer key={link.title}>
-                <Link passHref href={link.url}>
-                  {link.title}
-                </Link>
-              </LinkContainer>
-            );
-          })
-        )}
+        {headerNavLinks.map((link) => {
+          return (
+            <LinkContainer key={link.title}>
+              <Link passHref href={link.href}>
+                {link.title}
+              </Link>
+            </LinkContainer>
+          );
+        })}
       </NavBar>
     </Container>
   );
